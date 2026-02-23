@@ -1,0 +1,131 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: black;
+    color: white;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: gold;
+}
+
+
+.hero{
+    height: 30vh;
+    background: url('https://via.placeholder.com/1200x800') center/cover no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #333;
+
+}
+
+.hero h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero button{
+    padding: 12px 30px;
+    border: none;
+    background: gold;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hero button:hover{
+    background: white;
+}
+
+
+.products{
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.product-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+
+.about{
+    background: #f4f4f4;
+    padding: 60px 50px;
+    text-align: center;
+}
+
+
+.contact{
+    padding: 60px 50px;
+    text-align: center;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width:768px){
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1{
+        font-size: 30px;
+    }
+
+    .product-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
